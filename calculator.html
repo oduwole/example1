@@ -7,33 +7,20 @@
         <label>First Number</label>
         <input id="first" placeholder="Enter first number" />
         <label>Second Number</label>
-        <input id="second" placeholder="Enter Second number" />
-        <button type="button" id="calc" name="calc" onclick="myInstructions()">Calculate</button>
+        <input id="second" placeholder="Enter Second number" /><br />
+        <button type="button" id="calcAdd" name="calc" onclick="myInstructions('additon')"> + </button>
+        <button type="button" id="calcSub" name="calcSub" onclick="myInstructions('subtraction')"> - </button>
+        <button type="button" id="calcMul" name="calcMul" onclick="myInstructions('multiplication')"> * </button>
+        <button type="button" id="calcDiv" name="calcDiv" onclick="myInstructions('division')"> / </button>
         <br />
         <label for="result">Result</label>
         <input id="result" disabled />
         <br />
 
+        <script src="./assets/js/calculator.js"></script>
         <script>
            
 
-            console.log(first);
-
-            function calculate(a,b){
-                var result = a + b;
-                return result;
-            }
-
-            function myInstructions(){
-                var first;
-            var second;
-            var calcs;
-
-            first = parseFloat(document.getElementById('first').value);
-            second = parseFloat(document.getElementById('second').value);
-            calcs = calculate(first, second);
-            document.getElementById('result').value = calcs;
-            }
             </script>
     </body>
 </html>
